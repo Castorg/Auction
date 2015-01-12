@@ -12,3 +12,5 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\D
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\ORM.pdb
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\EntityFramework.xml
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\Ninject.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\Ninject.xml

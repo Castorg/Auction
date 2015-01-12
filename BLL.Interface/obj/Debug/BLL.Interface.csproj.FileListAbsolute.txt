@@ -8,3 +8,5 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\b
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\EntityFramework.xml
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\Ninject.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\Ninject.xml
