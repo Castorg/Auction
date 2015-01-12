@@ -8,5 +8,6 @@ namespace DAL.Interface.DTO
 {
     interface IUser
     {
+        int Id { get; set; }
     }
 }

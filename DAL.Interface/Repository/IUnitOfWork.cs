@@ -8,5 +8,7 @@ namespace DAL.Interface.Repository
 {
     interface IUnitOfWork
     {
+        DbContext Context { get; }
+        void Commit();
     }
 }

@@ -2,3 +2,4 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\D
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\DAL.pdb
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\obj\Debug\DAL.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\obj\Debug\DAL.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
