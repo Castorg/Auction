@@ -1,0 +1,4 @@
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DependencyResolver\bin\Debug\DependencyResolver.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DependencyResolver\bin\Debug\DependencyResolver.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DependencyResolver\obj\Debug\DependencyResolver.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DependencyResolver\obj\Debug\DependencyResolver.pdb

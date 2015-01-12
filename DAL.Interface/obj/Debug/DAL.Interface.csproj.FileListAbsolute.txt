@@ -1,0 +1,4 @@
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL.Interface\bin\Debug\DAL.Interface.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL.Interface\bin\Debug\DAL.Interface.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL.Interface\obj\Debug\DAL.Interface.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL.Interface\obj\Debug\DAL.Interface.pdb

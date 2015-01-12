@@ -1,0 +1,4 @@
+c:\users\castorg\documents\visual studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\BLL.Interface.dll
+c:\users\castorg\documents\visual studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\BLL.Interface.pdb
+c:\users\castorg\documents\visual studio 2013\Projects\EPAM_proj\BLL.Interface\obj\Debug\BLL.Interface.dll
+c:\users\castorg\documents\visual studio 2013\Projects\EPAM_proj\BLL.Interface\obj\Debug\BLL.Interface.pdb

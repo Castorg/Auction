@@ -1,0 +1,5 @@
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\BLL.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\BLL.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\obj\Debug\BLL.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\obj\Debug\BLL.pdb

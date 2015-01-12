@@ -1,0 +1,5 @@
+c:\users\castorg\documents\visual studio 2013\Projects\EPAM_proj\EPAM_proj\bin\Debug\EPAM_proj.dll
+c:\users\castorg\documents\visual studio 2013\Projects\EPAM_proj\EPAM_proj\bin\Debug\EPAM_proj.pdb
+c:\users\castorg\documents\visual studio 2013\Projects\EPAM_proj\EPAM_proj\obj\Debug\EPAM_proj.csprojResolveAssemblyReference.cache
+c:\users\castorg\documents\visual studio 2013\Projects\EPAM_proj\EPAM_proj\obj\Debug\EPAM_proj.dll
+c:\users\castorg\documents\visual studio 2013\Projects\EPAM_proj\EPAM_proj\obj\Debug\EPAM_proj.pdb
