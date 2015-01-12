@@ -9,7 +9,7 @@ using ORM;
 
 namespace DAL.Concrete
 {
-    class UserRepository
+    public class UserRepository
     {
         private readonly DbContext context;
 

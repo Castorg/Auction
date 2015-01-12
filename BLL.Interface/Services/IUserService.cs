@@ -7,7 +7,7 @@ using BLL.Interface.Entities;
 
 namespace BLL.Interface.Services
 {
-    interface IUserService
+    public interface IUserService
     {
         IEnumerable<UserEntity> GetAllUserEntities();
         void CreateUser(UserEntity user);

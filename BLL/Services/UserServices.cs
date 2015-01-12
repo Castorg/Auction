@@ -1,16 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using BLL.Interface.Entities;
+using BLL.Mappers;
+using DAL.Interface.DTO;
+using DAL.Interface.Repository;
 
 namespace BLL.Services
 {
-    class UserServices
+    public class UserServices
     {
         private readonly IUnitOfWork uow;
         private readonly IUserRepository userRepository;
-        public UserService(IUnitOfWork uow, IUserRepository repository)
+        public UserServices(IUnitOfWork uow, IUserRepository repository)
         {
             this.uow = uow;
             this.userRepository = repository;

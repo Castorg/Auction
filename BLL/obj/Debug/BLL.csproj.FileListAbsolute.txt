@@ -3,3 +3,12 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\B
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\obj\Debug\BLL.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\obj\Debug\BLL.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\BLL.dll.config
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\BLL.Interface.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\DAL.Interface.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\BLL.Interface.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\DAL.Interface.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\EntityFramework.SqlServer.xml

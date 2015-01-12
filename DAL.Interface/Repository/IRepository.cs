@@ -6,7 +6,7 @@ using DAL.Interface.DTO;
 
 namespace DAL.Interface.Repository
 {
-    interface IRepository
+    public interface IRepository<TEntity> where TEntity : IEntity
     {
         IEnumerable<TEntity> GetAll();
         TEntity GetById(int key);

@@ -2,3 +2,9 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DependencyResol
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DependencyResolver\bin\Debug\DependencyResolver.pdb
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DependencyResolver\obj\Debug\DependencyResolver.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DependencyResolver\obj\Debug\DependencyResolver.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DependencyResolver\bin\Debug\DependencyResolver.dll.config
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DependencyResolver\bin\Debug\EntityFramework.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DependencyResolver\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DependencyResolver\bin\Debug\EntityFramework.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DependencyResolver\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DependencyResolver\obj\Debug\DependencyResolver.csprojResolveAssemblyReference.cache
