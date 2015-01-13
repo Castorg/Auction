@@ -10,13 +10,15 @@ namespace ORM
 {
     public class EntityModel : DbContext
     {
-        public EntityModel()
-            : base("name=EntityModel")
+        public EntityModel(): base("name=EntityModel")
         {
             Debug.WriteLine("Context create!");
         }
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<User> Users { get; set; }
+
+        //public virtual DbSet<Lot> Lots { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Role>()

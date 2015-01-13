@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Linq;
 using DAL.Interface.DTO;
 using DAL.Interface.Repository;
@@ -16,7 +17,7 @@ namespace DAL.Concrete
         public UserRepository(IUnitOfWork uow)
         {
             this.context = uow.Context;
-            //Debug.WriteLine("repository create!");
+            Debug.WriteLine("repository create!");
         }
         public IEnumerable<DalUser> GetAll()
         {

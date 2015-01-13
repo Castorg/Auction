@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Linq;
 using BLL.Interface.Entities;
 using BLL.Interface.Services;
@@ -18,7 +19,7 @@ namespace BLL.Services
         {
             this.uow = uow;
             this.userRepository = repository;
-            //Debug.WriteLine("service create!");
+            Debug.WriteLine("service create!");
         }
         public IEnumerable<UserEntity> GetAllUserEntities()
         {
