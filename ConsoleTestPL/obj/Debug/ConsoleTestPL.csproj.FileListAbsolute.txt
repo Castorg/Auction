@@ -1,0 +1,16 @@
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\ConsoleTestPL.exe.config
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\obj\Debug\ConsoleTestPL.csprojResolveAssemblyReference.cache
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\ConsoleTestPL.exe
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\ConsoleTestPL.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\BLL.Interface.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\Ninject.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\BLL.Interface.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\Ninject.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\obj\Debug\ConsoleTestPL.exe
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\obj\Debug\ConsoleTestPL.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\EntityFramework.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\EntityFramework.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\CustomORM.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\CustomORM.pdb

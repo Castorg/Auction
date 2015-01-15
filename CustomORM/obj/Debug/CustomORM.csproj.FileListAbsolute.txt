@@ -1,0 +1,10 @@
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\bin\Debug\CustomORM.dll.config
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\bin\Debug\CustomORM.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\bin\Debug\CustomORM.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\bin\Debug\EntityFramework.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\bin\Debug\EntityFramework.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\obj\Debug\CustomORM.csprojResolveAssemblyReference.cache
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\obj\Debug\CustomORM.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\obj\Debug\CustomORM.pdb

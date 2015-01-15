@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyResolver", "Depen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTestPL", "ConsoleTestPL\ConsoleTestPL.csproj", "{58BB2D15-A358-468D-A915-252107D20168}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomORM", "CustomORM\CustomORM.csproj", "{84CF04ED-6606-41A5-87DA-6B81B74F0676}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{58BB2D15-A358-468D-A915-252107D20168}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58BB2D15-A358-468D-A915-252107D20168}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58BB2D15-A358-468D-A915-252107D20168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84CF04ED-6606-41A5-87DA-6B81B74F0676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84CF04ED-6606-41A5-87DA-6B81B74F0676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84CF04ED-6606-41A5-87DA-6B81B74F0676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84CF04ED-6606-41A5-87DA-6B81B74F0676}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
