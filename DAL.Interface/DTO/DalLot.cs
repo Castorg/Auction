@@ -9,5 +9,10 @@ namespace DAL.Interface.DTO
     public class DalLot : IEntity
     {
         public int Id{get; set; }
+        public int CurrentCost { get; set; }
+        public string Description { get; set; }
+
+        public int StoreId { get; set; }
+
     }
 }

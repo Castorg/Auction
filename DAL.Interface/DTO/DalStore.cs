@@ -9,5 +9,9 @@ namespace DAL.Interface.DTO
     public class DalStore : IEntity
     {
         public int Id{ get; set; }
+
+        public string Name { get; set; }
+
+        public string Addres { get; set; }
     }
 }
