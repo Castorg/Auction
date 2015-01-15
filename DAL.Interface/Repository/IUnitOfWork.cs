@@ -11,5 +11,7 @@ namespace DAL.Interface.Repository
     {
         DbContext Context { get; }
         void Commit();
+        
+         //bool RollBack();
     }
 }

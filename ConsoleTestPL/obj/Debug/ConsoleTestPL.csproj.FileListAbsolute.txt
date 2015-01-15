@@ -14,3 +14,9 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\b
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\CustomORM.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\CustomORM.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\DAL.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\DAL.Interface.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\ORM.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\DAL.Interface.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\DAL.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\ORM.pdb

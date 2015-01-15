@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DAL.Interface.DTO;
 
-namespace DAL.Interface.Repository
+namespace DAL.Interface.DTO
 {
-    public interface IUserRepository : IRepository<DalUser>
+    public class DalStore : IEntity
     {
-
+        public int Id{ get; set; }
     }
 }

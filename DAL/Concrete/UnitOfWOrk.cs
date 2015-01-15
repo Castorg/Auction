@@ -9,7 +9,7 @@ using DAL.Interface.Repository;
 
 namespace DAL.Concrete
 {
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork , IDisposable
     {
         public DbContext Context { get; private set; }
 
@@ -28,7 +28,7 @@ namespace DAL.Concrete
         public void Dispose()
         {
             Dispose(true);
-            //Debug.WriteLine("Context dispose!");
+            Debug.WriteLine("Context dispose!");
             GC.SuppressFinalize(this);
         }
 

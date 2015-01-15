@@ -5,6 +5,7 @@ using System.Reflection;
 using BLL.Interface.Entities;
 using BLL.Interface.Services;
 using CustomORM;
+using DAL.Concrete;
 using Ninject;
 
 namespace ConsoleTestPL
@@ -50,20 +51,25 @@ namespace ConsoleTestPL
             //    Console.WriteLine(user.UserName);
             //}
             #endregion
-            var lll = new Lot { CurrentCost = 100500 , Description = "Gravicapa"};
+            var lll = new User { Id = 1500, Name = "lloh" , Role = new Role{Name = "DOLDO" ,RoleId = 3 ,Description = "shit"}};
 
-            using (var db = new EntityContext())
+
+            using (var uow = new UnitOfWork(new EntityContext())) 
             {
-                db.Lots.Add(lll);
-                db.SaveChanges();
+                //var OUW = new UnitOfWork(db);
 
+                var sdf = uow.Context.Set<User>();
+                //db.Lots.Add(lll);
+                //db.SaveChanges();
+                sdf.Add(lll);
+                uow.Commit();
 
-                var a = from b in db.Stores
+                /*var a = from b in db.Stores
                         select b;
                 foreach (var VARIABLE in a)
                 {
                     Console.WriteLine(VARIABLE.Name);
-                }
+                }*/
                 int aasd = 0;
             }
         }
