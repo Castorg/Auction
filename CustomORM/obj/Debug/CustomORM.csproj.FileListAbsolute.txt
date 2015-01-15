@@ -8,3 +8,6 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\bin\D
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\obj\Debug\CustomORM.csprojResolveAssemblyReference.cache
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\obj\Debug\CustomORM.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\obj\Debug\CustomORM.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\bin\Debug\AutoMapper.Net4.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\bin\Debug\AutoMapper.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\bin\Debug\AutoMapper.xml

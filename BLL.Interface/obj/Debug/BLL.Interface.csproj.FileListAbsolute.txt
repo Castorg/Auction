@@ -10,3 +10,6 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\b
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\Ninject.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\Ninject.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\AutoMapper.Net4.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\AutoMapper.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\AutoMapper.xml

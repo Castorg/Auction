@@ -14,3 +14,6 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\N
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\Ninject.xml
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\CustomORM.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\CustomORM.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\AutoMapper.Net4.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\AutoMapper.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\DAL\bin\Debug\AutoMapper.xml

@@ -7,9 +7,21 @@ using BLL.Interface.Services;
 using CustomORM;
 using DAL.Concrete;
 using Ninject;
+using AutoMapper;
 
 namespace ConsoleTestPL
 {
+
+    internal class Foo
+    {
+        public int VAlue{get; set; } 
+    }
+
+    class Boo
+    {
+        public int temp { get; set; } 
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -51,6 +63,18 @@ namespace ConsoleTestPL
             //    Console.WriteLine(user.UserName);
             //}
             #endregion
+
+            Foo f = new Foo {VAlue = 5};
+            Boo b = new Boo {temp = 7};
+
+            Mapper.CreateMap<Foo, Boo>()
+                .ForMember(dest => dest.temp , opt =>opt.MapFrom(src =>src.VAlue));
+
+
+            var t = Mapper.Map<Foo, Boo>(f);
+
+
+            int dfghjhgfd = 0;
             var lll = new User { Id = 1234, Name = "kolya" , Role = new Role{Name = "DOLDO" ,RoleId = 3 ,Description = "shit"}};
 
 
