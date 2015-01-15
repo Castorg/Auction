@@ -49,19 +49,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseRepository.cs" />
+    <Compile Include="Concrete\BaseRepository.cs" />
+    <Compile Include="Concrete\LotRepository.cs" />
+    <Compile Include="Concrete\RoleRepository.cs" />
+    <Compile Include="Concrete\StoreRepository.cs" />
     <Compile Include="Concrete\UnitOfWork.cs" />
     <Compile Include="Concrete\UserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CustomORM\CustomORM.csproj">
+      <Project>{84CF04ED-6606-41A5-87DA-6B81B74F0676}</Project>
+      <Name>CustomORM</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL.Interface\DAL.Interface.csproj">
       <Project>{3644ecb7-2d74-4101-8d3f-95aceae9732e}</Project>
       <Name>DAL.Interface</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ORM\ORM.csproj">
-      <Project>{746c8015-424e-4a9c-9434-25c71ccaacf9}</Project>
-      <Name>ORM</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

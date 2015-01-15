@@ -4,12 +4,13 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CustomORM;
 
 namespace DAL.Interface.Repository
 {
      public interface IUnitOfWork
     {
-        DbContext Context { get; }
+        EntityContext Context { get; }
         void Commit();
         
          //bool RollBack();

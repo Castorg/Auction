@@ -22,16 +22,18 @@ namespace BLL.Services
             Debug.WriteLine("service create!");
         }
         public IEnumerable<UserEntity> GetAllUserEntities()
-        {
+        {/*
             //using (uow)
             {
                 return userRepository.GetAll().Select(user => user.ToBllUser());
-            }
+            }*/
+             throw new NotImplementedException();
         }
         public void CreateUser(UserEntity user)
-        {
+        {/*
             userRepository.Create(user.ToDalUser());
-            uow.Commit();
+            uow.Commit();*/
+            throw new NotImplementedException();
         }
     }
 }

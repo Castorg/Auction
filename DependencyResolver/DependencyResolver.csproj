@@ -65,6 +65,10 @@
       <Project>{a08bebd5-9028-4779-a1b4-220923ba87b3}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CustomORM\CustomORM.csproj">
+      <Project>{84CF04ED-6606-41A5-87DA-6B81B74F0676}</Project>
+      <Name>CustomORM</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL.Interface\DAL.Interface.csproj">
       <Project>{3644ecb7-2d74-4101-8d3f-95aceae9732e}</Project>
       <Name>DAL.Interface</Name>
@@ -72,10 +76,6 @@
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{5ea27ccb-12cf-484c-8e53-23efd965b0ef}</Project>
       <Name>DAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ORM\ORM.csproj">
-      <Project>{746c8015-424e-4a9c-9434-25c71ccaacf9}</Project>
-      <Name>ORM</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

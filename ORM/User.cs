@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace ORM
 {
     [Table("User")]
-    public class User
+    public class User 
     {
         public int Id { get; set; }
         [Required]

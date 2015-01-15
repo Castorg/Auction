@@ -55,13 +55,22 @@
     <Compile Include="DTO\DalUser.cs" />
     <Compile Include="DTO\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ConcreteInterfaceRepository\ILotRepository.cs" />
     <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="ConcreteInterfaceRepository\IRoleRepository.cs" />
+    <Compile Include="ConcreteInterfaceRepository\IStoreRepository.cs" />
     <Compile Include="Repository\IUnitOfWork.cs" />
     <Compile Include="Repository\IUserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomORM\CustomORM.csproj">
+      <Project>{84CF04ED-6606-41A5-87DA-6B81B74F0676}</Project>
+      <Name>CustomORM</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

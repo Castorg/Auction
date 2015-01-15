@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Diagnostics;
 using System.Linq;
+using CustomORM;
 using DAL.Interface.DTO;
 using DAL.Interface.Repository;
-using ORM;
 
 
 namespace DAL.Concrete

@@ -51,19 +51,20 @@ namespace ConsoleTestPL
             //    Console.WriteLine(user.UserName);
             //}
             #endregion
-            var lll = new User { Id = 1500, Name = "lloh" , Role = new Role{Name = "DOLDO" ,RoleId = 3 ,Description = "shit"}};
+            var lll = new User { Id = 1234, Name = "kolya" , Role = new Role{Name = "DOLDO" ,RoleId = 3 ,Description = "shit"}};
 
 
             using (var uow = new UnitOfWork(new EntityContext())) 
             {
+                //var repos = new base
                 //var OUW = new UnitOfWork(db);
 
-                var sdf = uow.Context.Set<User>();
-                //db.Lots.Add(lll);
-                //db.SaveChanges();
-                sdf.Add(lll);
-                uow.Commit();
+                var repos = new BaseRepository<User>(uow);
 
+                repos.Create(lll);
+
+
+                uow.Commit();
                 /*var a = from b in db.Stores
                         select b;
                 foreach (var VARIABLE in a)

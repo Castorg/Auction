@@ -14,3 +14,5 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\E
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\Ninject.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\Ninject.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\CustomORM.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL\bin\Debug\CustomORM.pdb

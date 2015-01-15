@@ -5,15 +5,16 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CustomORM;
 using DAL.Interface.Repository;
 
 namespace DAL.Concrete
 {
     public class UnitOfWork : IUnitOfWork , IDisposable
     {
-        public DbContext Context { get; private set; }
+        public EntityContext Context { get; private set; }
 
-        public UnitOfWork(DbContext context)
+        public UnitOfWork(EntityContext context)
         {
             Context = context;
             Debug.WriteLine("unit of work create!");
