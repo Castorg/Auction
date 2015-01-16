@@ -63,16 +63,16 @@ namespace ConsoleTestPL
             //    Console.WriteLine(user.UserName);
             //}
             #endregion
-
-            Foo f = new Foo {VAlue = 5};
+            #region Mapper
+            /*Foo f = new Foo {VAlue = 5};
             Boo b = new Boo {temp = 7};
 
             Mapper.CreateMap<Foo, Boo>()
                 .ForMember(dest => dest.temp , opt =>opt.MapFrom(src =>src.VAlue));
 
 
-            var t = Mapper.Map<Foo, Boo>(f);
-
+            var t = Mapper.Map<Foo, Boo>(f);*/
+            #endregion
 
             int dfghjhgfd = 0;
             var lll = new User { Id = 1234, Name = "kolya" , Role = new Role{Name = "DOLDO" ,RoleId = 3 ,Description = "shit"}};

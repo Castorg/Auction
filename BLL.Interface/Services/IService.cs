@@ -7,13 +7,13 @@ using DAL.Interface.Repository;
 
 namespace BLL.Interface.Services
 {
-    public interface IService
-    {
-        IUnitOfWork UnitOfWork { get; }
-    }
 
-    public interface IService<T> : IService where T : class
+    public interface IService<T> where T : class
     {
+
+        IUnitOfWork UnitOfWork { get; }
+        IRepository<T> Repository { get; }
+
         List<T> GetAll();
         void Insert(T entity);
         void Update(T entity);

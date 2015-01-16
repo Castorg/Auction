@@ -62,7 +62,7 @@
     <Compile Include="DTO\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ConcreteInterfaceRepository\ILotRepository.cs" />
-    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="ConcreteInterfaceRepository\IRepository.cs" />
     <Compile Include="ConcreteInterfaceRepository\IRoleRepository.cs" />
     <Compile Include="ConcreteInterfaceRepository\IStoreRepository.cs" />
     <Compile Include="Repository\IUnitOfWork.cs" />
