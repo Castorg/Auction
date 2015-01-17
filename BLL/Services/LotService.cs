@@ -22,9 +22,8 @@ namespace BLL.Services
         
         public List<LotEntity> GetAll()
         {
-            var a = Repository.GetByPredicate();
             var list = new List<LotEntity>();
-            foreach (var e in a)
+            foreach (var e in Repository.GetByPredicate())
             {
                 list.Add(e.ToLotEntity());
             }

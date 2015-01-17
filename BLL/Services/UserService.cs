@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using BLL.Interface.Entities;
 using BLL.Interface.Services;
+using BLL.Mappers;
 using CustomORM;
 using DAL.Interface.Repository;
 
@@ -21,7 +22,12 @@ namespace BLL.Services
 
         public List<UserEntity> GetAll()
         {
-            throw new NotImplementedException();
+            var list = new List<UserEntity>();
+            foreach (var e in Repository.GetByPredicate())
+            {
+                list.Add(e.ToUserEntity());
+            }
+            return list;
         }
 
         public void Insert(UserEntity entity)

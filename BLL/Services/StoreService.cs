@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BLL.Interface.Entities;
 using BLL.Interface.Services;
+using BLL.Mappers;
 using CustomORM;
 using DAL.Interface.Repository;
 
@@ -25,7 +26,12 @@ namespace BLL.Services
 
         public List<StoreEntity> GetAll()
         {
-            throw new NotImplementedException();
+            var list = new List<StoreEntity>();
+            foreach (var e in Repository.GetByPredicate())
+            {
+                list.Add(e.ToStoreEntity());
+            }
+            return list;
         }
 
         public void Insert(StoreEntity entity)

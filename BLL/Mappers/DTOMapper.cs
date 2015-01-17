@@ -82,7 +82,7 @@ namespace BLL.Mappers
         {
             return Mapper.Map<RoleEntity, Role>(roleEntity);
         }
-        public static RoleEntity ToRole(this Role role)
+        public static RoleEntity ToRoleEntity(this Role role)
         {
             return Mapper.Map<Role, RoleEntity>(role);
         }
