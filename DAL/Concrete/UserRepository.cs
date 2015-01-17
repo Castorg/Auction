@@ -10,7 +10,7 @@ using DAL.Interface.Repository;
 
 namespace DAL.Concrete
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository 
     {
         private readonly DbContext context;
 
