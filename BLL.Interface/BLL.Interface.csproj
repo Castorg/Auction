@@ -71,6 +71,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CustomORM\CustomORM.csproj">
+      <Project>{84CF04ED-6606-41A5-87DA-6B81B74F0676}</Project>
+      <Name>CustomORM</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL.Interface\DAL.Interface.csproj">
       <Project>{3644ECB7-2D74-4101-8D3F-95ACEAE9732E}</Project>
       <Name>DAL.Interface</Name>

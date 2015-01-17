@@ -1,0 +1,5 @@
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\UnitTest\obj\Debug\UnitTest.pdb

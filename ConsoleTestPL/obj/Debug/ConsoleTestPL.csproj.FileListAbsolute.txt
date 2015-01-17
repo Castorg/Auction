@@ -21,3 +21,5 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\b
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\AutoMapper.Net4.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\AutoMapper.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\AutoMapper.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\BLL.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\ConsoleTestPL\bin\Debug\BLL.pdb

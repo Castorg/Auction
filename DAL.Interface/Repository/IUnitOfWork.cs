@@ -8,7 +8,7 @@ using CustomORM;
 
 namespace DAL.Interface.Repository
 {
-     public interface IUnitOfWork
+     public interface IUnitOfWork : IDisposable
     {
         EntityContext Context { get; }
         void Commit();

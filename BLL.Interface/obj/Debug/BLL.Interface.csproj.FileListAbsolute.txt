@@ -13,3 +13,7 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\b
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\AutoMapper.Net4.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\AutoMapper.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\AutoMapper.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\DAL.Interface.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\CustomORM.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\DAL.Interface.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\BLL.Interface\bin\Debug\CustomORM.pdb

@@ -10,7 +10,7 @@ using DAL.Interface.Repository;
 
 namespace DAL.Concrete
 {
-    public class UnitOfWork : IUnitOfWork , IDisposable
+    public class UnitOfWork : IUnitOfWork
     {
         public EntityContext Context { get; private set; }
 

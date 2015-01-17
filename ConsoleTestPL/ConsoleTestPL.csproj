@@ -73,6 +73,10 @@
       <Project>{8882e3d1-3013-4d76-9227-55d4a301bfc1}</Project>
       <Name>BLL.Interface</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{A08BEBD5-9028-4779-A1B4-220923BA87B3}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CustomORM\CustomORM.csproj">
       <Project>{84cf04ed-6606-41a5-87da-6b81b74f0676}</Project>
       <Name>CustomORM</Name>
