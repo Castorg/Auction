@@ -36,17 +36,17 @@ namespace BLL.Services
 
         public void Insert(StoreEntity entity)
         {
-            throw new NotImplementedException();
+            Repository.Create(entity.ToStore()); 
         }
 
         public void Update(StoreEntity entity)
         {
-            throw new NotImplementedException();
+            Repository.Update(entity.ToStore());
         }
 
         public void Delete(StoreEntity entity)
         {
-            throw new NotImplementedException();
+            Repository.Delete(entity.ToStore());
         }
     }
 }

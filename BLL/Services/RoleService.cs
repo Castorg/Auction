@@ -32,17 +32,17 @@ namespace BLL.Services
 
         public void Insert(RoleEntity entity)
         {
-            throw new NotImplementedException();
+            Repository.Create(entity.ToRole()); 
         }
 
         public void Update(RoleEntity entity)
         {
-            throw new NotImplementedException();
+            Repository.Update(entity.ToRole());
         }
 
         public void Delete(RoleEntity entity)
         {
-            throw new NotImplementedException();
+            Repository.Delete(entity.ToRole());
         }
     }
 }
