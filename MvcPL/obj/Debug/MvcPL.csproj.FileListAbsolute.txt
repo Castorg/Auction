@@ -40,10 +40,11 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\AutoM
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\obj\Debug\MvcPL.csprojResolveAssemblyReference.cache
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\obj\Debug\MvcPL.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\obj\Debug\MvcPL.pdb
-C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\AutoMapper.Net4.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\DependencyResolver.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\Ninject.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\DAL.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\DependencyResolver.pdb
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\Ninject.xml
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\DAL.pdb
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\EntityFramework.SqlServer.dll
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\EntityFramework.SqlServer.xml

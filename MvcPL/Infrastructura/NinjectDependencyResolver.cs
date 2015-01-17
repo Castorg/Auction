@@ -17,12 +17,12 @@ namespace MvcPL.Infrastructura
         }
         public object GetService(Type serviceType)
         {
-            throw new NotImplementedException();
+            return this._kernel.TryGet(serviceType);
         }
 
         public IEnumerable<object> GetServices(Type serviceType)
         {
-            throw new NotImplementedException();
+            return this._kernel.GetAll(serviceType);
         }
     }
 }
