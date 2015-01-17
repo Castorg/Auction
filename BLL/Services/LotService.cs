@@ -38,12 +38,12 @@ namespace BLL.Services
 
         public void Update(LotEntity entity)
         {
-            throw new NotImplementedException();
+            Repository.Update(entity.ToLot());
         }
 
         public void Delete(LotEntity entity)
         {
-            throw new NotImplementedException();
+            Repository.Delete(entity.ToLot());
         }
     }
 }

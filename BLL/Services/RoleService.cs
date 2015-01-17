@@ -7,34 +7,33 @@ using DAL.Interface.Repository;
 
 namespace BLL.Services
 {
-    public class UserService : IUserService
+    public class RoleService : IRoleService
     {
-        public IUnitOfWork UnitOfWork { get; set; }
+        public IUnitOfWork UnitOfWork { get; private set; }
 
-        public IRepository<User> Repository { get; set; }
+        public IRepository<Role> Repository { get; private set; }
 
-        public UserService(IRepository<User> repository, IUnitOfWork ouw)
+        public RoleService(IRepository<Role> repository, IUnitOfWork ouw)
         {
-            UnitOfWork = ouw;
-            Repository = repository;
+            
         }
 
-        public List<UserEntity> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Insert(UserEntity entity)
+        public List<RoleEntity> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Update(UserEntity entity)
+        public void Insert(RoleEntity entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(UserEntity entity)
+        public void Update(RoleEntity entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(RoleEntity entity)
         {
             throw new NotImplementedException();
         }

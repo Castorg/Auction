@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BLL.Interface.Entities;
+using CustomORM;
 
 namespace BLL.Interface.Services
 {
-    interface IRoleService
+    public interface IRoleService : IService<Role , RoleEntity>
     {
     }
 }
