@@ -16,6 +16,9 @@ namespace DependencyResolver
             Bind<IUserRepository>().To<UserRepository>();
             Bind<IUnitOfWork>().To<UnitOfWork>();
             Bind<IUserService>().To<UserService>();
+            Bind<IStoreService>().To<StoreService>();
+            Bind<IRoleService>().To<RoleService>();
+            Bind<ILotService>().To<LotService>();
         }
     }
 }
