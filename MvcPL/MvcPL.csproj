@@ -140,6 +140,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\CSS\StyleSheet1.css" />
+    <Content Include="Content\Image\3.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -224,7 +226,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -241,6 +242,14 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{a08bebd5-9028-4779-a1b4-220923ba87b3}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomORM\CustomORM.csproj">
+      <Project>{84cf04ed-6606-41a5-87da-6b81b74f0676}</Project>
+      <Name>CustomORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL.Interface\DAL.Interface.csproj">
+      <Project>{3644ECB7-2D74-4101-8D3F-95ACEAE9732E}</Project>
+      <Name>DAL.Interface</Name>
     </ProjectReference>
     <ProjectReference Include="..\DependencyResolver\DependencyResolver.csproj">
       <Project>{44A6C137-6AD9-4B28-9524-8CBFE5FA123A}</Project>
