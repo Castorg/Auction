@@ -44,5 +44,10 @@ namespace BLL.Services
         {
             Repository.Delete(entity.ToLot());
         }
+
+        public LotEntity GetById(int id)
+        {
+            return Repository.GetById(id).ToLotEntity();
+        }
     }
 }

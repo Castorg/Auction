@@ -1,6 +1,9 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
 using BLL.Interface.Services;
+using BLL.Mappers;
 using CustomORM;
+using MvcPL.Models;
 
 
 namespace MvcPL.Controllers
@@ -45,12 +48,40 @@ namespace MvcPL.Controllers
             _lotService.Repository.Create(new Lot { CurrentCost = 324, Description = "Автокресло Maxi-cosi Pebble", LotId = 8, Store = st });
             _lotService.UnitOfWork.Commit();*/
 
-            var sdf = _lotService.Repository.GetByPredicate();
-            #endregion
-            int a = 0;
 
-            return View(sdf);
+            #endregion
+            var lots = _lotService.Repository.GetByPredicate();
+            var temp = new LotModel[lots.Count()];
+            int i = 0;
+            foreach (var model in lots)
+            {
+                temp[i] = new LotModel();
+                temp[i].CurencCost = model.CurrentCost;
+                temp[i].Description = model.Description;
+                temp[i].Address = _storeService.Repository.GetById(model.Store.StoreId).Addres;
+                i++;
+            }
+            return View(temp);
         }
 
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        public ActionResult LogIn()
+        {
+            return View();
+        }
+
+        public ActionResult Find(string term)
+        {
+            return View();
+        }
+
+        public ActionResult AddLot()
+        {
+            return View();
+        }
     }
 }

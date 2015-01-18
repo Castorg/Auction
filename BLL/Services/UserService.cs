@@ -44,5 +44,12 @@ namespace BLL.Services
         {
             Repository.Delete(entity.ToUser());
         }
+
+
+
+        public UserEntity GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

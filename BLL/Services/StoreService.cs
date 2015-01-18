@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -47,6 +48,13 @@ namespace BLL.Services
         public void Delete(StoreEntity entity)
         {
             Repository.Delete(entity.ToStore());
+        }
+
+
+
+        public StoreEntity GetById(int id)
+        {
+            return  Repository.GetById(id).ToStoreEntity();
         }
     }
 }

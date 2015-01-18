@@ -44,5 +44,12 @@ namespace BLL.Services
         {
             Repository.Delete(entity.ToRole());
         }
+
+
+
+        public RoleEntity GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -14,5 +14,7 @@ namespace BLL.Interface.Services
         void Insert(TDst entity);
         void Update(TDst entity);
         void Delete(TDst entity);
+
+        TDst GetById(int id);
     }
 }
