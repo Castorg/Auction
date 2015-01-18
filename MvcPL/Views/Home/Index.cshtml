@@ -2,7 +2,18 @@
 
 @{
     ViewBag.Title = "title";
-    /*Layout = "_Layout";*/
 }
+<link rel="stylesheet" type="text/css" href="@Url.Content("/Content/CSS/StyleSheet1.css")">
+<body>
+    <p>
+        <img class="main_menu" src="/Content/Image/3.png" />
+        <input height="20" class="button_maggin_border" class="main_menu" placeholder="Введите название лота" type="text" size="75" />
+        <button class="button_maggin_border">Найти</button>
+        <button class="button_maggin_grey">Войти</button>
+        <button class="button_maggin_red">Выставить лот</button>
+    </p>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
 
-<h2>Hello</h2>
+</body>
