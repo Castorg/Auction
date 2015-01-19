@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Net.Http;
+using System.Security.Principal;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
+using MvcPL.AlternativeAuth;
 using MvcPL.Infrastructura;
 
 namespace MvcPL
@@ -39,7 +41,12 @@ namespace MvcPL
                 var ticket = FormsAuthentication.Decrypt(user.Value);
                 if(ticket != null)
                 {
-
+                    var ui = UserInfo.FromString(ticket.UserData);
+                    if (ui != null)
+                    {
+                        var identity = new UserIdentity(ui.UserId, ui.Name);
+                        HttpContext.Current.User = new GenericPrincipal(identity, new[] { ui.UserRole });
+                    }
                 }
             }
         }

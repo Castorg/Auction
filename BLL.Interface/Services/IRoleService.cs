@@ -21,5 +21,7 @@ namespace BLL.Interface.Services
         void Delete(RoleEntity entity);
 
         RoleEntity GetById(int id);
+
+        Role GetByName(string mask);
     }
 }

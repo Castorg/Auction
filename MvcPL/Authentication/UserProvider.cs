@@ -25,18 +25,18 @@ namespace MvcPL.Authentication
         
         public bool IsInRole(string role)
         {
-            if (Identity.User == null)
+            /*if (Identity.User == null)
             {
                 return false;
             }
-            return Identity.User.InRoles(role);
+            return Identity.User.InRoles(role);*/
             throw new NotImplementedException();
         }
         public UserProvider(string name, IUserRepository repository)
         {
 
             UserIdentity = new UserIndentity();
-            UserIdentity.Init(name, repository);
+            /*UserIdentity.Init(name, repository);*/
         }
         public bool InRoles(string roles)
         {
@@ -46,14 +46,14 @@ namespace MvcPL.Authentication
             }
 
             var rolesArray = roles.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries);
-            foreach (var role in rolesArray)
+            /*foreach (var role in rolesArray)
             {
                 var hasRole = UserRoles.Any(p => string.Compare(p.Role.Code, role, true) == 0);
                 if (hasRole)
                 {
                     return true;
                 }
-            }
+            }*/
             return false;
         }
 

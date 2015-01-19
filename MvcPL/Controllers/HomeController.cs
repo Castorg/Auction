@@ -3,9 +3,11 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 using BLL.Interface.Services;
 using BLL.Mappers;
 using CustomORM;
+using MvcPL.AlternativeAuth;
 using MvcPL.Models;
 
 
@@ -24,7 +26,9 @@ namespace MvcPL.Controllers
         {
             int v = 0;
         }
-        public HomeController(IUserService userService, ILotService lotService ,IStoreService storeService ,IRoleService roleService)
+
+        public HomeController(IUserService userService, ILotService lotService, IStoreService storeService,
+            IRoleService roleService)
         {
             this._userService = userService;
             this._lotService = lotService;
@@ -35,6 +39,7 @@ namespace MvcPL.Controllers
         public ActionResult Index()
         {
             #region Store
+
             /*
             var st = new Store {Name = "ДАРОМ.БАЙ", Addres = "ТРЦ \"На ночлежке у ежа\"", StoreId = 3};
             //_storeService.Repository.Create(new Store{Name = "PROstore" ,Addres = "tyt" ,StoreId = 1});
@@ -51,7 +56,9 @@ namespace MvcPL.Controllers
 
 
             #endregion
+
             #region Cookie
+
             /*
             var cookie = new HttpCookie("test_cookie")
             {
@@ -69,12 +76,14 @@ namespace MvcPL.Controllers
                 var exp = req.Expires;
             }
             */
+
             #endregion
+
             var temp = _lotService.GetAll().Select(lot => new LotModel
             {
-               CurencCost = lot.CurrentCost ,
-               Description = lot.Description ,
-               Address = _storeService.GetById(lot.StoreId).Addres
+                CurencCost = lot.CurrentCost,
+                Description = lot.Description,
+                Address = _storeService.GetById(lot.StoreId).Addres
             });
             return View(temp);
         }
@@ -84,11 +93,7 @@ namespace MvcPL.Controllers
             return View();
         }
 
-        public ActionResult LogIn()
-        {
-            return View();
-        }
-
+        [Authorize(Roles = "Админ")]
         public ActionResult Find(string term)
         {
             ViewBag.template = term;

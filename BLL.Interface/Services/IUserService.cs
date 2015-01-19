@@ -23,5 +23,8 @@ namespace BLL.Interface.Services
         UserEntity GetById(int id);
         User Login(string userName, string password);
         User GetByName(string name);
+
+
+        void SaveChanges();
     }
 }

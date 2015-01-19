@@ -62,5 +62,10 @@ namespace BLL.Services
         {
             return Repository.GetByPredicate(f => f.Name == name).FirstOrDefault();
         }
+
+        public void SaveChanges()
+        {
+            Repository.SaveChages();
+        }
     }
 }

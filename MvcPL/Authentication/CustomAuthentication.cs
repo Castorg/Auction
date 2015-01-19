@@ -66,8 +66,9 @@ namespace MvcPL.Authentication
 
         public User Login(string userName)
         {
-            User retUser = UserService.GetAll().FirstOrDefault(p => string.Compare(p.UserName, userName, true) == 0).ToUser();
-             if (retUser != null)
+            User retUser =
+                UserService.GetAll().FirstOrDefault(p => string.Compare(p.UserName, userName, true) == 0).ToUser();
+            if (retUser != null)
             {
                 CreateCookie(userName);
             }
@@ -86,7 +87,7 @@ namespace MvcPL.Authentication
         public IPrincipal CurrentUser
         {
             get
-            {
+            {/*
                 if (_currentUser == null)
                 {
                     try
@@ -108,7 +109,8 @@ namespace MvcPL.Authentication
                         _currentUser = new UserProvider(null, null);
                     }
                 }
-                return _currentUser;
+                return _currentUser;*/
+                throw new NotImplementedException();
             }
         }
     }

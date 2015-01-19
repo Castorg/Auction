@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using BLL.Interface.Entities;
 using BLL.Interface.Services;
 using BLL.Mappers;
@@ -51,6 +52,11 @@ namespace BLL.Services
         public RoleEntity GetById(int id)
         {
             return Repository.GetById(id).ToRoleEntity();
+        }
+
+        public Role GetByName(string mask)
+        {
+            return Repository.GetByPredicate(f => f.Name == mask).FirstOrDefault();
         }
     }
 }

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using BLL.Interface.Entities;
 using CustomORM;
-using DAL.Interface.DTO;
 
 namespace BLL.Mappers
 {
@@ -48,18 +42,14 @@ namespace BLL.Mappers
 
             #endregion
             #region User
+
             Mapper.CreateMap<User, UserEntity>()
-                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.RoleId))
-                .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.Name))
-                .ForMember(dest => dest.RoleId, opt => opt.MapFrom(src => src.RoleId))
-                .ForMember(dest => dest.Password, opt => opt.MapFrom(src => src.Password))
-                .ForMember(dest => dest.Time, opt => opt.MapFrom(src => src.Time));
+                .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.Name));
+
+
             Mapper.CreateMap<UserEntity, User>()
-                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.RoleId))
-                 .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.UserName))
-                 .ForMember(dest => dest.RoleId, opt => opt.MapFrom(src => src.RoleId))
-                 .ForMember(dest => dest.Password, opt => opt.MapFrom(src => src.Password))
-                 .ForMember(dest => dest.Time, opt => opt.MapFrom(src => src.Time));
+                .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.UserName));
+
             #endregion
         }
         public static LotEntity ToLotEntity(this Lot lot)

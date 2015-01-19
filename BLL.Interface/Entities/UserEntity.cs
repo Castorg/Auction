@@ -12,6 +12,8 @@ namespace BLL.Interface.Entities
         public string UserName { get; set; }
         public int RoleId { get; set; }
 
+        public RoleEntity Role { get; set; }
+
         public string Password { get; set; }
 
         public DateTime Time{ get; set; }

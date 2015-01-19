@@ -131,19 +131,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlternativeAuth\UserIdentity.cs" />
+    <Compile Include="AlternativeAuth\UserInfo.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Authentication\CustomAuthentication.cs" />
     <Compile Include="Authentication\IAuthentication .cs" />
+    <Compile Include="Authentication\IUserProvider.cs" />
+    <Compile Include="Authentication\UserIdentity.cs" />
+    <Compile Include="Authentication\UserIndentity.cs" />
     <Compile Include="Authentication\UserProvider.cs" />
-    <Compile Include="Controllers\AccoutController.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructura\NinjectDependencyResolver.cs" />
+    <Compile Include="Models\LogInModel.cs" />
     <Compile Include="Models\LotModel.cs" />
     <Compile Include="Models\RegisterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -237,10 +243,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Create.cshtml" />
-    <Content Include="Views\Home\LogIn.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Home\Find.cshtml" />
     <Content Include="Views\Home\AddLot.cshtml" />
-    <Content Include="Views\Accout\Reg.cshtml" />
+    <Content Include="Views\Account\Reg.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
