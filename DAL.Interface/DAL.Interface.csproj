@@ -55,16 +55,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConcreteInterfaceRepository\ILotRepository.cs" />
+    <Compile Include="ConcreteInterfaceRepository\IRoleRepository.cs" />
+    <Compile Include="ConcreteInterfaceRepository\IStoreRepository.cs" />
+    <Compile Include="ConcreteInterfaceRepository\IUserRepository.cs" />
     <Compile Include="DTO\DalLot.cs" />
     <Compile Include="DTO\DalRole.cs" />
     <Compile Include="DTO\DalStore.cs" />
     <Compile Include="DTO\DalUser.cs" />
     <Compile Include="DTO\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ConcreteInterfaceRepository\ILotRepository.cs" />
     <Compile Include="ConcreteInterfaceRepository\IRepository.cs" />
-    <Compile Include="ConcreteInterfaceRepository\IRoleRepository.cs" />
-    <Compile Include="ConcreteInterfaceRepository\IStoreRepository.cs" />
     <Compile Include="Repository\IUnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -8,18 +8,20 @@ using BLL.Interface.Entities;
 using BLL.Interface.Services;
 using BLL.Mappers;
 using CustomORM;
+using DAL.Interface.ConcreteInterfaceRepository;
 using DAL.Interface.Repository;
 
 namespace BLL.Services
 {
-    public class StoreService : IStoreService
+    public class StoreService : IStoreService 
+
     {
         public IUnitOfWork UnitOfWork{ get; private set; }
 
-        public IRepository<Store> Repository { get; private set; }
+        public IStoreRepository Repository { get; private set; }
 
 
-        public StoreService(IRepository<Store> repository, IUnitOfWork ouw)
+        public StoreService(IStoreRepository repository, IUnitOfWork ouw)
         {
             UnitOfWork = ouw;
             Repository = repository;

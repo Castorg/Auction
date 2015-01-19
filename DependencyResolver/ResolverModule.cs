@@ -1,9 +1,11 @@
 ﻿using System.Data.Entity;
 using BLL.Interface;
+using BLL.Interface.Entities;
 using BLL.Interface.Services;
 using BLL.Services;
 using CustomORM;
 using DAL.Concrete;
+using DAL.Interface.ConcreteInterfaceRepository;
 using DAL.Interface.Repository;
 using Ninject.Modules;
 namespace DependencyResolver
@@ -14,12 +16,12 @@ namespace DependencyResolver
         {
             Bind<DbContext>().To<EntityContext>().InSingletonScope();
 
-            Bind<IUnitOfWork>().To<UnitOfWork>().InSingletonScope(); 
+            Bind<IUnitOfWork>().To<UnitOfWork>().InSingletonScope();
 
-            Bind<IRepository<Lot>>().To<BaseRepository<Lot>>();
-            Bind<IRepository<Store>>().To<BaseRepository<Store>>();
-            Bind<IRepository<User>>().To<BaseRepository<User>>();
-            Bind<IRepository<Role>>().To<BaseRepository<Role>>();
+            Bind<IUserRepository>().To<UserRepository>();
+            Bind<IStoreRepository>().To<StoreRepository>();
+            Bind<IRoleRepository>().To<RoleRepository>();
+            Bind<ILotRepository>().To<LotRepository>();
 
             
 

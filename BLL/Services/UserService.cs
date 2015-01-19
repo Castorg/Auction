@@ -4,6 +4,7 @@ using BLL.Interface.Entities;
 using BLL.Interface.Services;
 using BLL.Mappers;
 using CustomORM;
+using DAL.Interface.ConcreteInterfaceRepository;
 using DAL.Interface.Repository;
 
 namespace BLL.Services
@@ -12,9 +13,10 @@ namespace BLL.Services
     {
         public IUnitOfWork UnitOfWork { get; set; }
 
-        public IRepository<User> Repository { get; set; }
+        public IUserRepository Repository { get; set; }
 
-        public UserService(IRepository<User> repository, IUnitOfWork ouw)
+
+        public UserService(IUserRepository repository, IUnitOfWork ouw)
         {
             UnitOfWork = ouw;
             Repository = repository;
@@ -45,11 +47,9 @@ namespace BLL.Services
             Repository.Delete(entity.ToUser());
         }
 
-
-
         public UserEntity GetById(int id)
         {
-            throw new NotImplementedException();
+            return Repository.GetById(id).ToUserEntity();
         }
     }
 }

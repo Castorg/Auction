@@ -1,4 +1,7 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
+using System.Net;
+using System.Web;
 using System.Web.Mvc;
 using BLL.Interface.Services;
 using BLL.Mappers;
@@ -28,39 +31,51 @@ namespace MvcPL.Controllers
             this._roleService = roleService;
             this._storeService = storeService;
         }
-        //
-        // GET: /Home/
 
         public ActionResult Index()
         {
             #region Store
             /*
-            var st = new Store {Name = "Kupi-Prodau", Addres = "tam", StoreId = 2};
+            var st = new Store {Name = "ДАРОМ.БАЙ", Addres = "ТРЦ \"На ночлежке у ежа\"", StoreId = 3};
             //_storeService.Repository.Create(new Store{Name = "PROstore" ,Addres = "tyt" ,StoreId = 1});
 
-            _lotService.Repository.Create(new Lot { CurrentCost = 121 , Description = "Патефон \"дружба\"" , LotId = 1 , Store = st });
-            _lotService.Repository.Create(new Lot { CurrentCost = 144, Description = "Браслет \"Дары смерти\"", LotId = 2, Store = st });
-            _lotService.Repository.Create(new Lot { CurrentCost = 169, Description = "Гримерное зеркало", LotId = 3, Store = st });
-            _lotService.Repository.Create(new Lot { CurrentCost = 196, Description = "Штык нож \"Жаба\"", LotId = 4, Store = st });
-            _lotService.Repository.Create(new Lot { CurrentCost = 225, Description = "3 копейки 1915 г", LotId = 5, Store = st });
-            _lotService.Repository.Create(new Lot { CurrentCost = 256, Description = "2 копейки 1905 г", LotId = 6, Store = st });
-            _lotService.Repository.Create(new Lot { CurrentCost = 289, Description = "10 копеек 1914 г СПБ ВС", LotId = 7, Store = st });
-            _lotService.Repository.Create(new Lot { CurrentCost = 324, Description = "Автокресло Maxi-cosi Pebble", LotId = 8, Store = st });
+            _lotService.Repository.Create(new Lot { CurrentCost = 121 , Description = "Копилка для монет" , LotId = 9 , Store = st });
+            _lotService.Repository.Create(new Lot { CurrentCost = 144, Description = "Солдатик оловянный (моряк)обмен на монеты", LotId = 10, Store = st });
+            _lotService.Repository.Create(new Lot { CurrentCost = 169, Description = "Маслобойка старинная торг обмен на монеты", LotId = 11, Store = st });
+            _lotService.Repository.Create(new Lot { CurrentCost = 196, Description = "Колокольчик старинный торг обмен на монеты", LotId = 12, Store = st });
+            _lotService.Repository.Create(new Lot { CurrentCost = 225, Description = "Старые счеты времен СССР", LotId = 13, Store = st });
+            _lotService.Repository.Create(new Lot { CurrentCost = 256, Description = "Радиола Кантата-206 стерео рабочая ", LotId = 14, Store = st });
+            _lotService.Repository.Create(new Lot { CurrentCost = 289, Description = "Старинная керосиновая лампа TORPEDO Poland стекло", LotId = 15, Store = st });
+            _lotService.Repository.Create(new Lot { CurrentCost = 324, Description = "Старинный тяжеленный утюг нечищен", LotId = 16, Store = st });
             _lotService.UnitOfWork.Commit();*/
 
 
             #endregion
-            var lots = _lotService.Repository.GetByPredicate();
-            var temp = new LotModel[lots.Count()];
-            int i = 0;
-            foreach (var model in lots)
+            #region Cookie
+            /*
+            var cookie = new HttpCookie("test_cookie")
             {
-                temp[i] = new LotModel();
-                temp[i].CurencCost = model.CurrentCost;
-                temp[i].Description = model.Description;
-                temp[i].Address = _storeService.Repository.GetById(model.Store.StoreId).Addres;
-                i++;
+
+                Value = DateTime.Now.ToString("dd.MM.yyyy"),
+                Expires = DateTime.Now.AddMinutes(10)
+            };
+
+            Response.SetCookie(cookie);
+
+            var req = Request.Cookies["test_cookie"];
+            if (req != null)
+            {
+                var val = req.Value;
+                var exp = req.Expires;
             }
+            */
+            #endregion
+            var temp = _lotService.GetAll().Select(lot => new LotModel
+            {
+               CurencCost = lot.CurrentCost ,
+               Description = lot.Description ,
+               Address = _storeService.GetById(lot.StoreId).Addres
+            });
             return View(temp);
         }
 
@@ -76,7 +91,14 @@ namespace MvcPL.Controllers
 
         public ActionResult Find(string term)
         {
-            return View();
+            ViewBag.template = term;
+            var temp = _lotService.GetLotEntityBySubMask(term).Select(lot => new LotModel
+            {
+                CurencCost = lot.CurrentCost,
+                Description = lot.Description,
+                Address = _storeService.GetById(lot.StoreId).Addres
+            });
+            return View(temp);
         }
 
         public ActionResult AddLot()

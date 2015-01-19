@@ -4,6 +4,7 @@ using BLL.Interface.Entities;
 using BLL.Interface.Services;
 using BLL.Mappers;
 using CustomORM;
+using DAL.Interface.ConcreteInterfaceRepository;
 using DAL.Interface.Repository;
 
 namespace BLL.Services
@@ -12,9 +13,9 @@ namespace BLL.Services
     {
         public IUnitOfWork UnitOfWork { get; private set; }
 
-        public IRepository<Role> Repository { get; private set; }
+        public IRoleRepository Repository { get; private set; }
 
-        public RoleService(IRepository<Role> repository, IUnitOfWork ouw)
+        public RoleService(IRoleRepository repository, IUnitOfWork ouw)
         {
             UnitOfWork = ouw;
             Repository = repository;
@@ -49,7 +50,7 @@ namespace BLL.Services
 
         public RoleEntity GetById(int id)
         {
-            throw new NotImplementedException();
+            return Repository.GetById(id).ToRoleEntity();
         }
     }
 }

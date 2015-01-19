@@ -74,11 +74,7 @@ namespace ConsoleTestPL
 
             using (var uow = new UnitOfWork(new EntityContext())) 
             {
-                var serv = new LotService(new BaseRepository<Lot>(uow), uow);
-
-
-                //serv.Insert(yyy);
-                var bbb = serv.GetAll();
+               
 
 
                 uow.Commit();

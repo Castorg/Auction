@@ -4,13 +4,14 @@ using System.Data.Entity;
 using System.Diagnostics;
 using System.Linq;
 using CustomORM;
+using DAL.Interface.ConcreteInterfaceRepository;
 using DAL.Interface.DTO;
 using DAL.Interface.Repository;
 
 
 namespace DAL.Concrete
 {
-    public class UserRepository 
+    public class UserRepository  : IUserRepository
     {
         private readonly DbContext context;
 
@@ -55,6 +56,36 @@ namespace DAL.Concrete
             throw new NotImplementedException();
         }
         public void Update(DalUser entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        User IUserRepository.GetById(int key)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IQueryable<User> GetByPredicate(System.Linq.Expressions.Expression<Func<User, bool>> f = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Create(User e)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(User e)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(User entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public User Login(string userName, string password)
         {
             throw new NotImplementedException();
         }

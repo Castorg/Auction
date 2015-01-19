@@ -15,6 +15,17 @@ body {
     border-bottom-width: 0px;
 
 }
+td {
+    margin: 10px 0;
+    padding: 5px 10px;
+    color: #00ced1;
+    border: 1px solid #00ced1;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+
+}
+
 .main_menu {
      display: inline;
 }
@@ -33,6 +44,15 @@ body {
     border-right-width: 5px;
     border-bottom-width: 5px;
 }
+
+.button_maggin_grey_2{
+    margin-left: 1%;
+    border: 1px solid grey;
+    border-top-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+}
 .button_maggin_red {
     margin-left: 10%;
     border: 1px solid #b22222;
@@ -44,6 +64,23 @@ body {
 .margin_lot {
     width: 400px;
     border: 1px solid #2e8b57;
+    border-top-width: 2px;
+    border-left-width:2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+}
+.margin_field {
+    width: 173px;
+    border: 1px solid #00ced1;
+    border-top-width: 2px;
+    border-left-width:2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+}
+.margin_gree_button {
+    margin-top: 5%;
+    width: 170px;
+    border: 1px solid #0000ff;
     border-top-width: 2px;
     border-left-width:2px;
     border-right-width: 2px;
@@ -71,4 +108,13 @@ textarea {
 }
 .color_text {
     color: black;
+}
+.letter { 
+     color: red; 
+     font-size: 200%; 
+     font-family: serif; 
+     position: relative;  
+    }
+.offset_custom {
+    margin-left: 40%;
 }
