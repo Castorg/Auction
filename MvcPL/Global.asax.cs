@@ -5,6 +5,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Web.Security;
 using MvcPL.Infrastructura;
 
 namespace MvcPL
@@ -29,6 +30,18 @@ namespace MvcPL
         protected void Application_PostAuthenticateRequest(object source, EventArgs e)
         {
             var user = HttpContext.Current.Request.Cookies["user"];
+            if (user == null)
+            {
+                //var a = base.PostAuthenticateRequest;
+            }
+            else
+            {
+                var ticket = FormsAuthentication.Decrypt(user.Value);
+                if(ticket != null)
+                {
+
+                }
+            }
         }
     }
 }
