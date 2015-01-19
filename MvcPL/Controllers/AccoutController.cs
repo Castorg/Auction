@@ -38,6 +38,9 @@ namespace MvcPL.Controllers
                 _userService.Insert(new UserEntity
                 {
                     UserName = viewModel.Login,
+                    Password = viewModel.Password,
+                    Time = new DateTime()
+                    
                 });
                 return RedirectToAction("Index", "Home");
             }

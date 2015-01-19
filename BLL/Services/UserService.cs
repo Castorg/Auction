@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using BLL.Interface.Entities;
 using BLL.Interface.Services;
 using BLL.Mappers;
@@ -50,6 +51,16 @@ namespace BLL.Services
         public UserEntity GetById(int id)
         {
             return Repository.GetById(id).ToUserEntity();
+        }
+
+        public User Login(string userName, string password)
+        {
+            return Repository.GetByPredicate(f => (f.Name == userName && f.Password == password)).FirstOrDefault();
+        }
+
+        public User GetByName(string name)
+        {
+            return Repository.GetByPredicate(f => f.Name == name).FirstOrDefault();
         }
     }
 }

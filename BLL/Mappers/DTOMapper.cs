@@ -51,11 +51,15 @@ namespace BLL.Mappers
             Mapper.CreateMap<User, UserEntity>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.RoleId))
                 .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.Name))
-                .ForMember(dest => dest.RoleId, opt => opt.MapFrom(src => src.RoleId));
+                .ForMember(dest => dest.RoleId, opt => opt.MapFrom(src => src.RoleId))
+                .ForMember(dest => dest.Password, opt => opt.MapFrom(src => src.Password))
+                .ForMember(dest => dest.Time, opt => opt.MapFrom(src => src.Time));
             Mapper.CreateMap<UserEntity, User>()
                  .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.RoleId))
                  .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.UserName))
-                 .ForMember(dest => dest.RoleId, opt => opt.MapFrom(src => src.RoleId));
+                 .ForMember(dest => dest.RoleId, opt => opt.MapFrom(src => src.RoleId))
+                 .ForMember(dest => dest.Password, opt => opt.MapFrom(src => src.Password))
+                 .ForMember(dest => dest.Time, opt => opt.MapFrom(src => src.Time));
             #endregion
         }
         public static LotEntity ToLotEntity(this Lot lot)

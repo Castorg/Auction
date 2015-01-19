@@ -14,6 +14,10 @@ namespace CustomORM
 
         public int RoleId { get; set; }
 
+        public string Password { get; set; }
+
+        public DateTime Time { get; set; }
+
         public virtual Role Role { get; set; }
     }
 }

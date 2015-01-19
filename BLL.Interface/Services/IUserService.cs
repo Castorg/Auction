@@ -21,5 +21,7 @@ namespace BLL.Interface.Services
         void Delete(UserEntity entity);
 
         UserEntity GetById(int id);
+        User Login(string userName, string password);
+        User GetByName(string name);
     }
 }

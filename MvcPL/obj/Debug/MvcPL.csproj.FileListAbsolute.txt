@@ -50,3 +50,4 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\Entit
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\EntityFramework.SqlServer.xml
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\NLog.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\NLog.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\MvcPL\bin\AutoMapper.Net4.dll

@@ -5,6 +5,8 @@ using System.Linq;
 using System.Security.Principal;
 using System.Web;
 using System.Web.Security;
+using BLL.Interface.Services;
+using BLL.Mappers;
 using CustomORM;
 using DAL.Interface.ConcreteInterfaceRepository;
 using DAL.Interface.Repository;
@@ -17,22 +19,21 @@ namespace MvcPL.Authentication
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         public HttpContext HttpContext { get; set; }
 
-        public IRepository<User> UserRepository;
-        public IUserRepository Repository;
+        public IUserService UserService;
 
 
         private const string cookieName = "__AUTH_COOKIE";
         private IPrincipal _currentUser;
 
 
-        public CustomAuthentication(IRepository<User> user)
+        public CustomAuthentication(IUserService userService)
         {
-            UserRepository = user;
+            UserService = userService;
         }
 
         public User Login(string userName, string password, bool isPersistent)
         {
-            User retUser = Repository.Login(userName, password);
+            var retUser = UserService.Login(userName, password);
             if (retUser != null)
             {
                 CreateCookie(userName, isPersistent);
@@ -65,13 +66,12 @@ namespace MvcPL.Authentication
 
         public User Login(string userName)
         {
-           /* User retUser = Repository.Users.FirstOrDefault(p => string.Compare(p.Email, userName, true) == 0);
-            if (retUser != null)
+            User retUser = UserService.GetAll().FirstOrDefault(p => string.Compare(p.UserName, userName, true) == 0).ToUser();
+             if (retUser != null)
             {
                 CreateCookie(userName);
             }
-            return retUser;*/
-            throw new NotImplementedException();
+            return retUser;
         }
 
         public void LogOut()
@@ -86,7 +86,7 @@ namespace MvcPL.Authentication
         public IPrincipal CurrentUser
         {
             get
-            {/*
+            {
                 if (_currentUser == null)
                 {
                     try
@@ -95,7 +95,7 @@ namespace MvcPL.Authentication
                         if (authCookie != null && !string.IsNullOrEmpty(authCookie.Value))
                         {
                             var ticket = FormsAuthentication.Decrypt(authCookie.Value);
-                            _currentUser = new UserProvider(ticket.Name, Repository);
+                            _currentUser = new UserProvider(ticket.Name, I);
                         }
                         else
                         {
@@ -108,8 +108,7 @@ namespace MvcPL.Authentication
                         _currentUser = new UserProvider(null, null);
                     }
                 }
-                return _currentUser;*/
-            throw new NotImplementedException();
+                return _currentUser;
             }
         }
     }

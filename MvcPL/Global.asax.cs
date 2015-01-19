@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Net.Http;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -24,6 +23,12 @@ namespace MvcPL
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             System.Web.Mvc.DependencyResolver.SetResolver(new NinjectDependencyResolver());
+
+        }
+
+        protected void Application_PostAuthenticateRequest(object source, EventArgs e)
+        {
+            var user = HttpContext.Current.Request.Cookies["user"];
         }
     }
 }

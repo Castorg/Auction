@@ -11,3 +11,6 @@ C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\obj\D
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\bin\Debug\AutoMapper.Net4.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\bin\Debug\AutoMapper.dll
 C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\bin\Debug\AutoMapper.xml
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\obj\Debug\CustomORM.Migrations.InitialCreate.resources
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\obj\Debug\CustomORM.csproj.GenerateResource.Cache
+C:\Users\Castorg\Documents\Visual Studio 2013\Projects\EPAM_proj\CustomORM\obj\Debug\CustomORM.Migrations.changedUser.resources
