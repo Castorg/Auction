@@ -12,12 +12,14 @@ namespace DAL.Concrete
 {
     public class StoreRepository : IStoreRepository
     {
-                private readonly DbContext _dbContext;
+        private readonly IUnitOfWork unitOfWork;
+        private readonly DbContext _dbContext;
         internal DbSet<Store> DbSet;
 
         public StoreRepository(IUnitOfWork uow)
         {
             if (uow == null) throw new ArgumentException("UnitOfWork");
+            this.unitOfWork = uow;
             this._dbContext = uow.Context;
             this.DbSet = _dbContext.Set<Store>();
         }

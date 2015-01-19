@@ -3,14 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using BLL.Interface.Entities;
+using BLL.Interface.Services;
 using MvcPL.Models;
 
 namespace MvcPL.Controllers
 {
     public class AccoutController : Controller
     {
-        //
-        // GET: /Accout/
+        private readonly IUserService _userService;
+        private readonly IRoleService _roleService;
+        public AccoutController(IUserService userService, IRoleService roleService)
+        {
+            this._userService = userService;
+            this._roleService = roleService;
+        }
 
         public ActionResult Index()
         {
@@ -23,11 +30,21 @@ namespace MvcPL.Controllers
             return View();
         }
         [HttpPost]
-        public void Reg(RegisterViewModel viewModel)
+        public ActionResult Reg(RegisterViewModel viewModel)
         {
-            int a = 0;
-
-            RedirectToAction("Index", "Home");
+            var a = _userService.GetAll();
+            if (a.Select(f => f.UserName == viewModel.Login).Count() == 0)
+            {
+                _userService.Insert(new UserEntity
+                {
+                    UserName = viewModel.Login,
+                });
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return RedirectToAction("Reg", "Accout");
+            }
         }
 
     }

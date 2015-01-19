@@ -18,5 +18,6 @@ namespace DAL.Interface.ConcreteInterfaceRepository
         void Update(User entity);
 
         User Login(string userName , string password );
+        void SaveChages();
     }
 }
