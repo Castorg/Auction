@@ -26,5 +26,6 @@ namespace BLL.Interface.Services
 
 
         void SaveChanges();
+        List<User> GetLotEntityBySubMask(string temp);
     }
 }

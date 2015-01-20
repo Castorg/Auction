@@ -106,15 +106,5 @@ namespace MvcPL.Controllers
             Response.Cookies.Add(cookie);
             return RedirectToAction("Index", "Home");
         }
-
-        public ActionResult FindLot()
-        {
-            throw new NotImplementedException();
-        }
-
-        public ActionResult FindUser()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

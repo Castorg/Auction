@@ -67,5 +67,10 @@ namespace BLL.Services
         {
             Repository.SaveChages();
         }
+
+        public List<User> GetLotEntityBySubMask(string temp)
+        {
+            return Repository.GetByPredicate(f => f.Name.Contains(temp)).ToList();
+        }
     }
 }

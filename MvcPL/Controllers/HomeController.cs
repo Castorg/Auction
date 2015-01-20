@@ -16,24 +16,17 @@ namespace MvcPL.Controllers
 {
     public class HomeController : Controller
     {
-
-        private readonly IUserService _userService;
         private readonly ILotService _lotService;
         private readonly IStoreService _storeService;
-        private readonly IRoleService _roleService;
-
 
         public HomeController()
         {
             int v = 0;
         }
 
-        public HomeController(IUserService userService, ILotService lotService, IStoreService storeService,
-            IRoleService roleService)
+        public HomeController(ILotService lotService, IStoreService storeService)
         {
-            this._userService = userService;
             this._lotService = lotService;
-            this._roleService = roleService;
             this._storeService = storeService;
         }
 

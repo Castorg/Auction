@@ -1,0 +1,76 @@
+﻿@model IEnumerable<  MvcPL.Models.UserModel>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<link rel="stylesheet" type="text/css" href="@Url.Content("/Content/CSS/StyleSheet1.css")">
+<body>
+    <p>
+        <img class="main_menu" src="/Content/Image/3.png" />
+        <input id="term" height="20" class="button_maggin_border main_menu" placeholder="Введите название лота " type=" text" size="75" />
+        <input class="button_maggin_border js_find" type="button" data-link="@Url.Action("Find", "Home")" value="Найти">
+
+    </p>
+    <table width="1200" border="0">
+        <col width="400" valign="top">
+        <col width="200" valign="top">
+        <col width="300" valign="top">
+        <col width="300" valign="top">
+        <col width="200" valign="top">
+        <tr>
+            <td>
+                <span class=" color_text">
+                    Имя:
+                </span>
+            </td>
+            <td>
+                <span class=" color_text">
+                    Роль:
+                </span>
+            </td>
+            <td>
+                <span class=" color_text">
+                    время регистрации:
+                </span>
+            </td>
+            <td>
+                <span class=" color_text">
+                    пароль:
+                </span>
+            </td>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <span class=" color_text">
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </span>
+                </td>
+                <td>
+                    <span class=" color_text">
+                        @Html.DisplayFor(modelItem => item.RoleDesc)
+                    </span>
+                </td>
+                <td>
+                    <span class=" color_text">
+                        @Html.DisplayFor(modelItem => item.Time)
+                    </span>
+                </td>
+                <td>
+                    <span class=" color_text">
+                        @Html.DisplayFor(modelItem => item.Password)
+                    </span>
+                </td>
+                <td>
+                    <span class=" color_text">
+                        @Html.ActionLink("Редактировать","EditUser" ,"Admin")
+                    </span>
+                </td>
+            </tr>
+        }
+    </table>
+</body>
