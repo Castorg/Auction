@@ -1,0 +1,22 @@
+﻿@model dynamic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+@{
+    var c = Model;
+}
+<link rel="stylesheet" type="text/css" href="@Url.Content("/Content/CSS/StyleSheet1.css")">
+
+<body>
+    <p>
+        <img class="main_menu" src="/Content/Image/3.png" />
+        <input id="term" height="20" class="button_maggin_border main_menu" placeholder="Введите название лота " type=" text" size="75" />
+        <input class="button_maggin_border js_find" type="button" data-link="@Url.Action("FindLot", "Account")" value="Найти лот">
+        <input class="button_maggin_border js_find" type="button" data-link="@Url.Action("FindUser", "Account")" value="Найти пользователя">
+        <input class="button_maggin_grey js_link" type="button" data-link="@Url.Action("Logoff", "Account")" value="Выйти">
+    </p>
+
+</body>

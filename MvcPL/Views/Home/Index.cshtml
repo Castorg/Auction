@@ -1,4 +1,6 @@
-﻿@using MvcPL.Controllers
+﻿@using System.Security.Principal
+@using MvcPL.AlternativeAuth
+@using MvcPL.Controllers
 @model IEnumerable< MvcPL.Models.LotModel >
 
 @{
@@ -8,11 +10,45 @@
 <body>
     <p>
         <img class="main_menu" src="/Content/Image/3.png" />
-        <input id="term" height="20" class="button_maggin_border main_menu" placeholder="Введите название лота" type="text" size="75" />
+        <input id="term" height="20" class="button_maggin_border main_menu" placeholder="Введите название лота " type=" text" size="75" />
         <input class="button_maggin_border js_find" type="button" data-link="@Url.Action("Find", "Home")" value="Найти">
-        <input class="button_maggin_grey js_link" type="button" data-link="@Url.Action("Login", "Account")" value="Войти">
-        <input class="button_maggin_grey_2 js_link" type="button" data-link="@Url.Action("Reg", "Account")" value="Регистрация">
-        <input class="button_maggin_red js_link" type="button" data-link="@Url.Action("AddLot", "Home")" value="Выставить лот">
+        @{
+            var user = HttpContext.Current.Request.Cookies["user"];
+            if (user != null)
+            {
+                var ticket = FormsAuthentication.Decrypt(user.Value);
+                if (ticket != null)
+                {
+                    var ui = UserInfo.FromString(ticket.UserData);
+                    if (ui != null)
+                    { 
+                    
+                        ViewBag.CurrentUser = ui.Name;
+                        ViewBag.CurrentRole = ui.UserRole;
+                    }
+                }
+            }
+        }
+
+        @if (this.ViewBag.CurrentUser == null)
+        {
+
+            <input class="button_maggin_grey js_link" type="button" data-link="@Url.Action("Login", "Account")" value="Войти">
+            <input class="button_maggin_grey_2 js_link" type="button" data-link="@Url.Action("Reg", "Account")" value="Регистрация">
+        }
+        else
+        {
+            <input class="button_maggin_grey js_link" type="button" data-link="@Url.Action("Logoff", "Account")" value="Выйти">
+        }
+        @if (this.ViewBag.CurrentRole == "Пользователь" || this.ViewBag.CurrentRole == null)
+        {
+            <input class="button_maggin_red js_link" type="button" data-link="@Url.Action("AddLot", "Account")" value="Выставить лот">
+        }
+        else
+        {
+            <input class="button_maggin_red js_link" type="button" data-link="@Url.Action("Edit", "Admin")" value="Администрирование">
+        }
+       
     </p>
     <table width="900" border="0">
         <col width="400" valign="top">
@@ -21,7 +57,7 @@
         <tr>
             <td>
                 <span class=" color_text">
-                    Наименование:
+                    Наименование: 
                 </span>
             </td>
             <td>

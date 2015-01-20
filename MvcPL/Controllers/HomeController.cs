@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Net;
+using System.Security.Principal;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
@@ -58,24 +59,28 @@ namespace MvcPL.Controllers
             #endregion
 
             #region Cookie
-
             /*
-            var cookie = new HttpCookie("test_cookie")
+            var user = System.Web.HttpContext.Current.Request.Cookies["user"];
+            if (user == null)
             {
-
-                Value = DateTime.Now.ToString("dd.MM.yyyy"),
-                Expires = DateTime.Now.AddMinutes(10)
-            };
-
-            Response.SetCookie(cookie);
-
-            var req = Request.Cookies["test_cookie"];
-            if (req != null)
-            {
-                var val = req.Value;
-                var exp = req.Expires;
+                //var a = base.PostAuthenticateRequest;
             }
-            */
+            else
+            {
+                var ticket = FormsAuthentication.Decrypt(user.Value);
+                if (ticket != null)
+                {
+                    var ui = UserInfo.FromString(ticket.UserData);
+                    if (ui != null)
+                    {
+                        Response.SetCookie(new HttpCookie("test")
+                        {
+                            Value = ui.Name
+                        });
+                    }
+                }
+            }*/
+
 
             #endregion
 
@@ -88,12 +93,6 @@ namespace MvcPL.Controllers
             return View(temp);
         }
 
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        [Authorize(Roles = "Админ")]
         public ActionResult Find(string term)
         {
             ViewBag.template = term;
@@ -104,11 +103,6 @@ namespace MvcPL.Controllers
                 Address = _storeService.GetById(lot.StoreId).Addres
             });
             return View(temp);
-        }
-
-        public ActionResult AddLot()
-        {
-            return View();
         }
     }
 }
